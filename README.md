@@ -6,7 +6,7 @@ License: MIT
 ## Description
 A small collection of simple sorting algorithms programmed in Java 8.
 
-Currently includes:
+Currently includes:  
   `Quicksort`
   
 Also includes a class to test and time sorting algorithms.
