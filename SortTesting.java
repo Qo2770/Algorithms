@@ -1,3 +1,7 @@
+// MIT License
+
+// Copyright (c) 2017 Quentin Oschatz
+
 public class SortTesting {
 	
 	public static void main(String[] args) {
