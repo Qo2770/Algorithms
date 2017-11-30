@@ -2,8 +2,6 @@
 
 // Copyright (c) 2017 Quentin Oschatz
 
-package Sorting;
-
 public class Heapsort {
 
   public void heapsort(int[] array) {

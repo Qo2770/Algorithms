@@ -2,8 +2,6 @@
 
 // Copyright (c) 2017 Quentin Oschatz
 
-package Sorting;
-
 public class SortTesting {
 
 	public static void main(String[] args) {
