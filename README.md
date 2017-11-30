@@ -4,7 +4,7 @@ Version: 1.0
 License: MIT  
 
 ## Description
-A small collection of simple sorting algorithms programmed in Java 8.
+A small collection of simple algorithms (currently only sorting algorithms) programmed in Java 8.
 
 Currently includes:  
   `Quicksort`  
