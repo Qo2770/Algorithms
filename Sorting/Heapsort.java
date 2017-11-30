@@ -6,65 +6,88 @@ package Sorting;
 
 public class Heapsort {
 
-    public heapsort(int[] array, int count) {
+  public void heapsort(int[] array) {
 
-      //BinaryTree tree = new BinaryTree();
-      buildMaxHeap(array, count);
+    generateMaxHeap(array);
 
-      int end = count - 1;
-      int temp;
+    for(int i = array.length - 1; i > 0; i--) {
 
-      while(end > 0) {
-
-        temp = array[end];
-        array[end] = array[0];
-        array[0] = temp;
-
-        end--;
-
-        siftUp(array, 0, end);
-
-      }
+    	switchElements(array, i, 0);
+    	heapify(array, 0, i);
 
     }
 
-    public buildMaxHeap(int[] array, count) {
+  }
 
-      int end = 1;
+  /*
+   * Function to regenerate heap after each switch
+   *
+   * @param array The array to be sorted
+   * @param i The element to be heapified
+   * @param len The last element to be heapified (all non-sorted elements)
+   *
+   */
 
-      while(end < count) {
+  public void heapify(int[] array, int i, int len) {
 
-        siftUp(array, 0, end);
-        end++;
+	  // Main loop
+	  while(i <= (len / 2) - 1) {
 
-      }
+		  // Calculate the index of left child
+		  int indexChild = ((i+1) * 2) - 1;
 
-    }
+		  // Check if right child exists
+		  if(indexChild + 1 <= len - 1) {
 
-    public void siftUp(int[] array, int start, int end) {
+			  // Check if right child is larger than left child, if yes, choose right child to switch
+			  if(array[indexChild+1] > array[indexChild])
+				  indexChild++;
 
-      int iParent = ((end - start))-1)/2;
+		  }
 
-      int child = end;
-      int temp;
-      while(child > start) {
+		  // Check if heapify is necessary
+		  if(array[i] < array[indexChild]) {
 
-        if(array[iParent] < array[child]) {
+			  // If yes, switch this element with larger child
+			  switchElements(array, i, indexChild);
+			  i = indexChild;
 
-          temp = array[iParent];
-          array[iParent] = array[child];
-          array[child] = temp;
+		  } else break; // No change necessary
 
-          child = iParent;
+	  }
 
-        } else {
+  }
+  /*
+   * Function to generate inital heap
+   *
+   *@param array The array to generate a heap from
+   *
+   */
 
-          return;
+  public void generateMaxHeap(int[] array) {
 
-        }
+	  // Start from the middle and loop through elements to heapify
+	  for(int i = (array.length / 2) - 1; i >= 0 ; i--)
+		  heapify(array, i, array.length);
 
-      }
+  }
 
-    }
+  /*
+   *
+   * Helper function which switches elements in array
+   *
+   * @param array The array in which to sort
+   * @param i The first element to be switched
+   * @param j The second element to be switched
+   *
+   */
+
+  public void switchElements(int[] array, int i, int j) {
+
+	  int temp = array[i];
+	  array[i] = array[j];
+	  array[j] = temp;
+
+  }
 
 }
