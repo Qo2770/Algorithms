@@ -9,7 +9,9 @@ A small collection of simple sorting algorithms programmed in Java 8.
 Currently includes:  
   `Quicksort`  
   `Bubblesort`  
-  `Heapsort`   
-        
+  `Heapsort`  
+  `Insertionsort`    
+  `Selectionsort`     
+           
         
 Also includes a class to test and time sorting algorithms.
