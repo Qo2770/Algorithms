@@ -28,7 +28,7 @@ public class SortTesting {
 		// Calculate elapsed time
 		long elapsedTime = System.nanoTime() - startTime;
 
-		System.out.println("Elapsed time: " + (elapsedTime / 1000) + "ms");
+		System.out.println("Elapsed time: " + (elapsedTime / 1000000) + "ms");
 
 		// Output sorted array
 		for(int i = 0; i < random.length; i++) {
