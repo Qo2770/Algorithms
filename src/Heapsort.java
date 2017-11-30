@@ -26,7 +26,7 @@ public class Heapsort {
    *
    */
 
-  public void heapify(int[] array, int i, int len) {
+  private void heapify(int[] array, int i, int len) {
 
 	  // Main loop
 	  while(i <= (len / 2) - 1) {
@@ -62,7 +62,7 @@ public class Heapsort {
    *
    */
 
-  public void generateMaxHeap(int[] array) {
+  private void generateMaxHeap(int[] array) {
 
 	  // Start from the middle and loop through elements to heapify
 	  for(int i = (array.length / 2) - 1; i >= 0 ; i--)
@@ -80,7 +80,7 @@ public class Heapsort {
    *
    */
 
-  public void switchElements(int[] array, int i, int j) {
+  private void switchElements(int[] array, int i, int j) {
 
 	  int temp = array[i];
 	  array[i] = array[j];
