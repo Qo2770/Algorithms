@@ -21,7 +21,7 @@ public class SortTesting {
 		long startTime = System.nanoTime();
 
 		// Sort array
-		qs.quicksort(random, 0, size - 1);
+		qs.sort(random, 0, size - 1);
 
 		// Calculate elapsed time
 		long elapsedTime = System.nanoTime() - startTime;

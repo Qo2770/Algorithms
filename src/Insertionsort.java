@@ -4,7 +4,7 @@
 
 public class Insertionsort {
 
-  public void insertionsort(int[] array) {
+  public void sort(int[] array) {
 
     for(int i = 2; i < array.length; i++) {
 

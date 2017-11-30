@@ -34,7 +34,7 @@ public class Quicksort {
 
 	}
 
-	public void quicksort(int[] array, int low, int high) {
+	public void sort(int[] array, int low, int high) {
 
 		if(low < high) {
 

@@ -4,7 +4,7 @@
 
 public class Heapsort {
 
-  public void heapsort(int[] array) {
+  public void sort(int[] array) {
 
     generateMaxHeap(array);
 

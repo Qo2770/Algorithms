@@ -4,7 +4,7 @@
 
 public class Bubblesort {
 
-	public void bubblesort(int[] array) {
+	public void sort(int[] array) {
 
 		// Check if sort is actually still sorting
 		boolean switched = false;
