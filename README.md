@@ -10,5 +10,5 @@ Currently includes:
   `Quicksort`  
   `Bubblesort`  
   `Heapsort`   
-    
+        
 Also includes a class to test and time sorting algorithms.
