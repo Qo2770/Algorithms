@@ -1,4 +1,4 @@
-# SortingAlgorithms
+# Sorting Algorithms
 Author: Quentin Oschatz  
 Version: 1.0   
 License: MIT  
@@ -11,7 +11,10 @@ Currently includes:
   `Bubblesort`  
   `Heapsort`  
   `Insertionsort`    
-  `Selectionsort`     
+  `Selectionsort`  
+  
+Upcoming/Planned Algorithms:  
+  `A* Algorithm`   
            
         
 Also includes a class to test and time sorting algorithms.
