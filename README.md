@@ -11,10 +11,12 @@ Currently includes:
   `Bubblesort`  
   `Heapsort`  
   `Insertionsort`    
-  `Selectionsort`  
-  
-Upcoming/Planned Algorithms:  
-  `A* Algorithm`   
+  `Selectionsort`  
+  `Introsort`  
+  `A* Pathfinding`  
+  `A Binary Tree data type` (Helperclass)  
+  
+Upcoming/Planned Algorithms:    
            
         
 Also includes a class to test and time sorting algorithms.
