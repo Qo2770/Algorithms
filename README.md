@@ -18,8 +18,5 @@ Currently includes:
      
 Upcoming/Planned Algorithms:    
   Currently none, though more in the future  
-    
-      
-       
-       
-Also includes a class to test and time sorting algorithms.
+     
+(Also includes a class to test and time sorting algorithms.)
