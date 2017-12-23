@@ -17,6 +17,6 @@ Currently includes:
   `A Binary Tree data type` (Helperclass)    
      
 Upcoming/Planned Algorithms:    
-  Currently none, though more in the future    
+  Currently none, though more in the future   
         
 Also includes a class to test and time sorting algorithms.
