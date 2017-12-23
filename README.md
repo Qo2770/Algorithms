@@ -16,7 +16,6 @@ Currently includes:
   `A* Pathfinding`  
   `A Binary Tree data type` (Helperclass)  
    
-   
 Upcoming/Planned Algorithms:    
            
         
