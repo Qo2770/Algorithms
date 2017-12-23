@@ -38,6 +38,15 @@ public class Quicksort {
 
 		if(low < high) {
 
+			// If threshold is reached, switch to heapsort
+			if((Math.log(array.length) * 2) == 0) {
+
+				Heapsort hs = new Heapsort();
+				hs.heapsort(array);
+				return;
+
+			}
+
 			int pivot = partition(array, low, high);
 
 			//Recursively sort elements before partition and after partition
